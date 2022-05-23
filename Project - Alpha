@@ -14,7 +14,10 @@ public class Main {
         double mortgage = calculateMortgage(principal, annualInterest, years);
 
         String mortgageFormatted = NumberFormat.getCurrencyInstance().format(mortgage);
+        System.out.println("---------");
         System.out.println("Mortgage: " + mortgageFormatted);
+        System.out.println("---------");
+        System.out.println("Payment Schedule");
     }
 
     public static double readNumber(String prompt, double min, double max){
